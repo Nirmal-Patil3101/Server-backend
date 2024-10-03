@@ -1,4 +1,5 @@
-import { Order } from "../models/UserSchema.js";
+import { Order } from "../models/OrderSchema.js";
+
 
 const addOrder = async (req,res)=>{
     console.log(req.body);

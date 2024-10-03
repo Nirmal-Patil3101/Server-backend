@@ -1,4 +1,5 @@
-import { Prod } from "../models/UserSchema.js";
+// import { Prod } from "../models/UserSchema.js";
+import { Prod } from "../models/ProductsSchema.js";
 import { updateUser } from "./UserController.js";
 
 const addProd = async (req,res)=>{
