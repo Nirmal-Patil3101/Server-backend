@@ -19,15 +19,16 @@ const orderSchema = mongoose.Schema({
     ref: "User",
     required: [true, "User Id"],
   },
-  orderProdId: {
-    type: mongoose.Types.ObjectId,
-    ref: "Prod",
-    required: [true, "Product Id"],
-  },
+  orderItems: [
+    {
+      prodId: { type: mongoose.Types.ObjectId, ref: "Prod" },
+      Qty: Number,
+    },
+  ],
   orderStatus: {
     type: String,
     required: [true, "Order Status"],
-    default: "Pending"
+    default: "Pending",
   },
 });
 

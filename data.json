@@ -1,0 +1,13 @@
+{
+  "orderTotal": 3,
+  "orderNoofItem": 20,
+  "orderUserId": "66f62de8c1b923a4aaa9c2a6",
+  "orderItems": [
+    {
+      "prodId": "66faa08e2cec3b8fa4f03dea",
+      "Qty": 2
+    },
+    { "prodId": "66faa08e2cec3b8fa4f03dea", "Qty": 5 },
+    { "prodId": "66faa08e2cec3b8fa4f03dea", "Qty": 6 }
+  ]
+}
