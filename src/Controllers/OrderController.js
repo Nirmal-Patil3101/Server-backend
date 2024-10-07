@@ -14,6 +14,8 @@ const addOrder = async (req,res)=>{
 const getOrder = async(req,res)=>{
     try {
         const order = await Order.find()
+        .populate('orderUserId',"uname umobno")
+        .populate('orderProdId',"prodName prodPrice")
         res.status(200).json(order)
     } catch (error) {
         res.status(500).json(error)
